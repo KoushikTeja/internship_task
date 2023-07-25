@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meeting Transcript Summary</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Meeting Transcript Summary</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="text">Enter Meeting Transcript:</label><br>
+            <textarea id="text" name="text" rows="10" cols="50"></textarea><br>
+            <button type="submit">Generate Summary</button>
+        </form>
+
+        {% if summary %}
+        <div class="summary-container">
+            <h2>Summary:</h2>
+            <div class="summary-content">{{ summary }}</div>  <!-- Wrap the summary with a div element -->
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
