@@ -5,10 +5,7 @@ This project aims to extract topics and generate corresponding keynotes from mee
 Setup
 Clone the repository to your local machine.
 Install the required dependencies by running: pip install -r requirements.txt.
-Create a .env file in the project's root directory and add your OpenAI API key:
-makefile
-Copy code
-OPENAI_API_KEY=your_openai_api_key_here
+
 Running the Django Application
 Open the terminal and navigate to the project's root directory.
 Run the following command to start the Django server: python manage.py runserver.
