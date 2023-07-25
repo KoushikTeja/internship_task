@@ -1,6 +1,6 @@
 import openai
 
-# Set your OpenAI GPT-3.5 Turbo API keys here
+#OPENAI_API_KEYS
 API_KEY_TOPIC_IDENTIFICATION = "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"
 API_KEY_KEYNOTE_GENERATION = "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"
 
