@@ -1,8 +1,8 @@
 import openai
 
 #OPENAI_API_KEYS
-API_KEY_TOPIC_IDENTIFICATION = "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"
-API_KEY_KEYNOTE_GENERATION = "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"
+API_KEY_TOPIC_IDENTIFICATION = "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"
+API_KEY_KEYNOTE_GENERATION = "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"
 
 def identify_topics_with_gpt(transcription_text):
     conversation = [{"role": "system",
